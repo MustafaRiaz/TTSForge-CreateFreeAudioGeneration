@@ -1,0 +1,30 @@
+# VoiceForge dependencies — pin compatible versions for Windows/Python 3.11–3.13
+# Core (required)
+PySide6>=6.6.0,<7
+numpy>=1.26.0,<3
+soundfile>=0.12.1
+onnxruntime>=1.17.0
+
+# Recommended TTS engine (permissive licensing)
+kokoro-onnx>=0.4.0
+
+# Optional lightweight TTS (GPL-3.0 — see THIRD_PARTY_LICENSES.md)
+# piper-tts>=1.2.0
+
+# Optional CPU voice cloning (MIT — see THIRD_PARTY_LICENSES.md)
+# chatterbox-tts
+# Note: pulls PyTorch; keep optional so the core ONNX install stays light.
+# Document import
+python-docx>=1.1.0
+pypdf>=4.0.0
+ebooklib>=0.18
+beautifulsoup4>=4.12.0
+
+# Hardware / utilities
+psutil>=5.9.0
+
+# Packaging (dev)
+# pyinstaller>=6.0.0
+
+# Testing
+pytest>=8.0.0
